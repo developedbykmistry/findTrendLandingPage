@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+</head>
+<body class="flex m-auto bg-white flex flex-col">
+    <section class="bg-black h-full" id="about">
+        <div class="w-full h-full xl:h-screen text-white max-w-screen-xl m-auto">
+            <nav class="flex flex-row justify-between md:justify-around 2xl:justify-between py-8 px-6">
+                    <img id="logo" src="./img/logo.png" class="h-9 w-26">
+                <ul id="navlist" class="lg:relative lg:flex lg:flex-row md:space-x-12">
+                    <li class="text-lg font-medium text-gray-200"><a href="#about">About</a></li>
+                    <li class="text-lg font-medium text-gray-200"><a href="#info">How it Works</a></li>
+                    <li class="text-lg font-medium text-gray-200"><a href="#features">Features</a></li>
+                    <li class="text-lg font-medium text-gray-200"><a href="#pricing">Pricing</a></li>
+                    <li class="text-lg font-medium text-gray-200"><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="cta" class="hidden xl:flex space-x-6">
+                    <button class="text-white">Login</button>
+                    <button class="bg-white text-black h-9 px-6 py- flex items-center m-auto font-semibold rounded-full">Register</button>
+                </div>
+                <div id="hamburger">
+                    <svg id="menu" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+
+                    <svg id="cancel" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg>
+                </div>
+            </nav>
+            <main class="w-full h-1/2 flex flex-col justify-center items-center">
+                <h1 class="text-4xl xl:text-6xl font-extrabold text-center leading-tight 0"><span> Minimize your tabs.  <br>Find your tabs!</span></h1>
+                <p id="intro-p" class="px-6 max-w-2xl mt-4 xl:text-lg text-gray-300 text-center">Don’t let your computer memories consumes all of those browser tabs. Findtrend  let you gathers all of your favorite website into place.</p>
+                <button id="green-btn" class="text-black px-8 py-3 font-bold rounded-full mt-8">Get Started 🔥</button>
+            </main> 
+
+            <div class="flex flex-col xl:flex-row justify-center mt-16 items-center my-16 space-y-8">
+
+                <div id="searchbox" class="flex flex-row space-x-3 items-center align-middle justify-between max w-56 xl:w-60 bg-gray-800 px-6 py-4 xl:-translate-y-10 xl:translate-x-4 transform-gpu -rotate-3 xl:-rotate-6 z-10">
+                    <img src="./img/twitter.svg" class="w-10">
+                    <h4 class="text-xl xl:text-2xl font-medium">Crpytopunk</h4>
+                </div>
+    
+                <div id="searchbox" class="flex flex-row space-x-3 items-center align-middle justify-between max w-62 xl:w-72 bg-gray-800 px-6 py-4 transform-gpu rotate-3 xl:rotate-6">
+                    <img src="./img/pinterest.svg" class="w-10">
+                    <h4 class="text-xl xl:text-2xl  font-medium">Popular Design</h4>
+                </div>
+    
+                <div id="searchbox" class="flex flex-row space-x-3 items-center align-middle justify-between max w-62 xl:w-72 bg-gray-800 px-6 py-4 xl:-translate-y-10  transform-gpu -rotate-3 xl:-rotate-6">
+                    <img src="./img/fb.svg" class="h-10">
+                    <h4 class="text-xl xl:text-2xl  font-medium">Product Design</h4>
+                </div>
+    
+                <div id="searchbox" class="flex flex-row space-x-3 items-center align-middle justify-between max w-62 xl:w-72 bg-gray-800 px-6 py-4 xl:-translate-x-4 transform-gpu rotate-3 xl:rotate-6">
+                    <img src="./img/dribble.svg" class="w-10">
+                    <h4 class="text-xl xl:text-2xl  font-medium">Poster Design</h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full h-full flex flex-col text-white" id="green-bg">
+        <div id="subcontent" class="max-w-screen-xl m-auto p-8 xl:p-32">
+            <h2 class="text-3xl xl:text-7xl font-bold text-center text-black">Open New Tab is sh*t</h2>
+        <div box" class="bg-white text-black xl:h-52 h-52 xl:w-2/3  w-full flex flex-row justify-center items-center xl:py-36 px-12 rounded-lg m-auto mt-16">
+            <div class="bg-black w-68 h-16 flex flex-row items-center justify-between space-x-4">
+                <img src="./img/logo.png" class="h-10 w-48 mx-4">
+                <div class="h-full w-14 bg-gray-900 flex justify-center items-center ">
+                    <img src="https://img.icons8.com/material-outlined/24/ffffff/delete-sign.png" class="w-8"/>
+                </div>
+            </div>
+        </div>
+
+        <p class="max-w-3xl mt-12 text-lg text-gray-900 text-center font-medium">A solution for your browser tabs and don’t make your device get slower over time. Get ease and faster to discover a trend with just one tab.</p>
+        </div>
+    </section>
+
+    <section id="info" class="h-full w-full bg-white flex justify-center items-center xl:py-44 py-20">
+        <h1 id="info-h1" class="m-auto max-w-screen-lg text-left font-extrabold xl:text-6xl text-3xl px-6 m-0 2xl:ml-80 text-gray-900 leading-10">
+            Findtrend helps you to increase your productivity and reduce your computer's memory load, an application that can fulfill your daily browsing needs.</h1>
+    </section>
+ 
+    <section id="features" class="bg-white h-full w-full pt-20">
+        <div class="max-w-screen-xl m-auto">
+            <h1 class="xl:text-5xl text-3xl px-4 h-full font-bold w-full text-center">Findtrend make +1000 Startups grow</h1>
+            <div class="max-w-screen-xl flex flex-wrap xl:gap-10 gap-4 mt-20 items-center justify-center p-2 xl:p-0">
+                <img src="./img/company/brand1.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand3.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand2.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand5.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand4.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand6.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand7.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand8.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand1.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand3.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand4.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand2.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand5.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand6.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand7.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+                <img src="./img/company/brand8.png" id="features-img" class="2xl:w-72 md:w-64 w-20">
+            </div>
+        </div>
+    </section>
+
+    <section  class="w-full bg-gray-100 py-22 mt-32 flex items-center">
+        <div id="social" class="w-full h-full">
+            <h1 id="social-h1" class="xl:text-4xl text-3xl font-bold text-center xl:m-20 my-10 p-8">All platform connect to Findtrend</h1>
+
+                <div id="social-scroll" class="flex space-x-3 xl:space-x-8 w-full h-full m-auto xl:p-4 overflow-scroll xl:overflow-visible justify-center items-center">
+                <img id="social-img" src="./img/fb.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/twitter.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/dribble.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/pinterest.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/medium.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/reddit.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/vk.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+                <img id="social-img" src="./img/linkedin.svg" class="2xl:h-32 2xl:w-32 h-20 w-20 bg-white p-5 rounded-lg transform-gpu  hover:-translate-y-3 ease-in-out duration-200">
+            </div>
+
+            <div class="p-4">
+                <img id="tweet-img" src="./img/tweet/tweet1.png" class="h-full m-auto my-10 rounded-lg">
+                <img id="tweet-img" src="./img/tweet/tweet2.png" class="h-full m-auto my-10 rounded-lg">
+                <img id="tweet-img" src="./img/tweet/tweet3.png" class="h-full m-auto my-10 rounded-lg">
+            </div>
+
+            <button class="flex px-10 py-4 bg-black text-white rounded-full m-auto items-center xl:my-12 mb-10">
+                View More Trend
+            </button>
+        </div>
+    </section>
+
+    <section id="pricing" class="w-full h-full bg-black text-white p-10">
+        <div class="max-w-screen-xl h-full m-auto my-40">
+            <h1 class="text-center font-bold xl:text-6xl text-4xl">Get your best deal</h1>
+            <div class="w-80 flex flex-row items-center justify-between m-auto my-20">
+                <p class="font-medium text-2xl">Monthly</p>
+                <div id="switch" class="w-28 h-12 bg-white rounded-full flex items-center p-2">
+                    <div id="switch-ball" class="h-10 w-10 bg-green-400 rounded-full"></div>
+                </div>
+                <p class="font-medium text-2xl">Yearly</p>
+            </div>
+        </div>
+        
+        <div class="flex xl:flex-row flex-col space-y-8 max-w-screen-xl m-auto justify-between">
+            <div id="card" class="m-auto 2xl:w-96 md:w-80 w-full h-full bg-white text-black p-10 rounded-xl flex flex-col justify-between space-y-10">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-2">Personal</h2>
+                <p class="text-lg">Lorem ipsum dolar sit amet</p>
+                <hr class="border-1.5 border-gray-300 mt-6">
+                </div>
+
+                <div>
+                    <h1 class="w-full text-5xl font-bold">$8 <span class="text-lg font-normal">/Month</span></h1>
+
+                <ul class="mt-10 space-y-4 text-lg font-medium">
+                    <li>Up to 5 page each group</li>
+                    <li>Up to 10 group page</li>
+                    <li>5 Days group page saved</li>
+                </ul>
+                </div>
+
+                <button id="green-bg" class="py-3 px-5 w-full rounded-full font-bold">Start free trial</button>
+            </div>
+
+            <span id="green-bg" class="rounded-xl"><div id="card" class="m-auto 2xl:w-96 md:w-80 w-full  h-full  text-black text-black p-10 flex flex-col justify-between space-y-10">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-2">Personal</h2>
+                <p class="text-lg">Lorem ipsum dolar sit amet</p>
+                <hr class="border-1.5 border-gray-300 mt-6">
+                </div>
+
+                <div>
+                    <h1 class="text-5xl font-bold">$48 <span class="text-lg font-normal">/Month</span></h1>
+
+                <ul class="mt-10 space-y-4 text-lg font-medium">
+                    <li>Up to 5 page each group</li>
+                    <li>Up to 10 group page</li>
+                    <li>15 Days group page saved</li>
+                    <li>Customize group page name</li>
+                    <li>30 Days group page saved</li>
+                </ul>
+                </div>
+
+                <button class="bg-black text-white py-3 px-5 w-full rounded-full font-bold">Start free trial</button> 
+            </div></span>
+
+            <div id="card" class="m-auto 2xl:w-96 md:w-80 w-full  h-full bg-white text-black p-10 rounded-xl flex flex-col justify-between space-y-10">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-2">Regular</h2>
+                <p class="text-lg">Lorem ipsum dolar sit amet</p>
+                <hr class="border-1.5 border-gray-300 mt-6">
+                </div>
+
+                <div>
+                    <h1 class="text-5xl font-bold">$20 <span class="text-lg font-normal">/Month</span></h1>
+
+                <ul class="mt-10 space-y-4 text-lg font-medium">
+                    <li>Up to 5 page each group</li>
+                    <li>Up to 10 group page</li>
+                    <li>15 Days group page saved</li>
+                    <li>Download page upto 20 pages</li>
+                </ul>
+                </div>
+
+                <button id="green-bg" class="py-3 px-5 w-full rounded-full font-bold">Start free trial</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="max-w-screen-xl m-auto md:py-40 py-20  flex flex-col items-center">
+            <h1 id="contact-h1" class="text-center font-extrabold xl:text-6xl text-4xl max-w-screen-sm py-10 px-8 md:px-0">Join us on email for more trending topics</h1>
+            <button id="contact-cta" class="bg-black text-white xl:text-lg text-sm font-medium py-3 xl:px-10 px-6 rounded-full">Join Now</button>
+        </div>
+    </section>
+
+    <footer class="bg-white xl:h-24 h-full py-4">
+        <div class="max-w-screen-xl flex xl:flex-row flex-col m-auto xl:justify-between justify-around items-center h-full">
+            <div class="py-14 md:py-4">
+                <img src="./img/footer_logo.png" class="h-10">
+            </div>
+            <ul class="flex md:flex-row flex-col justify-between items-center md:space-x-5 space-y-6 md:space-y-0 font-medium text-lg pb-12 md:pb-0">
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Contact Us</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#hamburger {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    z-index: 100; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+    padding-bottom: 10px;
+}
+
+#menu {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+#menu.active {
+    display: none;
+}
+
+#cancel {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    display: none;
+}
+#cancel.active {
+    display: block;
+}
+
+#navlist {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    top: 0%;
+    right: -100%;
+    margin: 0;
+    z-index: 99;
+    align-items: flex-end;
+    padding-right: 10%;
+    padding-top: 25%;
+    transition: all ease-in 0.3s;
+    opacity: 0;
+}
+#navlist.active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #030303;
+    top: 0%;
+    right: 0%;
+    margin: 0;
+    z-index: 99;
+    align-items: flex-end;
+    padding-right: 10%;
+    padding-top: 25%;
+    transition: all ease-in 0.3s;
+}
+
+#navlist li {
+    padding-top: 45px; 
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#social-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#social-scroll img:hover {
+    background-color: #92ff44;
+    margin-top: -10px;
+}
+
+#switch {
+    justify-content: left;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+#switch.active {
+    justify-content: right;
+}
+
+#green-btn, #green-bg, #switch-ball, #contact {
+    background-color: #92ff44;
+} 
+
+
+@media screen and (min-width: 550px){
+    #hamburger {
+        display: none;
+    }
+
+    #navlist {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        opacity: 1;
+        background-color: transparent;
+        top: 0%;
+        right: 0%;
+    }
+    
+    #navlist li {
+        padding: 0; 
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+
+}
+
+/* h1 {
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  line-height: 2;
+}
+
+h1 span {
+  display: block;
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+} */
+ 
